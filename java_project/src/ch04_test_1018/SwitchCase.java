@@ -1,25 +1,32 @@
 package ch04_test_1018;
 
+import java.util.Scanner;
+
 public class SwitchCase {
 	public static void main(String[] args) {
 
-		int ranking = 1;
+		
+		Scanner in = new Scanner(System.in);
+		
+		String medal = in.next();
+		
+		// int ranking = in.nextInt();
 		char medalColor;
 		
-		switch(ranking){
+		switch(medal){
 		
-			case 1: medalColor = 'G';
+			case "gold": medalColor = 'G';
 				break;
 				
-			case 2: medalColor = 'S';
+			case "silver" : medalColor = 'S';
 				break;
 			
-			case 3: medalColor = 'B';
+			case "bronze" : medalColor = 'B';
 				break;
 			default:
-				medalColor = 'A';
+				medalColor = 'x';
 		}
 		
-		System.out.println(ranking + "등 메달의 색깔은 " + medalColor + " 입니다.");
+		System.out.println(medal + "의 메달의 색깔은 " + medalColor + " 입니다.");
 	}
 }
