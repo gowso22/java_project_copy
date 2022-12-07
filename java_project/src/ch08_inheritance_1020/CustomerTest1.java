@@ -21,9 +21,10 @@ public class CustomerTest1 {
 		System.out.println(customerKim.showCustomerInfo());
 		
 		
-		// 묵시적 형변환 lsy. >> 부모클래스만 보임
+		// 묵시적 형변환 lsy.~ >> 부모클래스만 보임
 		Customer lsy = new VIPCustomer(); 
-		// 명시적 형변환  lsy7. >> 자식클래스와 부모클래스 전부 다 보임
+		
+		// 명시적 형변환  lsy7.~ >> 자식클래스와 부모클래스 전부 다 보임
 		VIPCustomer lsy7 = (VIPCustomer)lsy; 
 		
 		
