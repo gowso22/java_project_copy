@@ -28,6 +28,9 @@ public class CustomerTest1 {
 		VIPCustomer lsy7 = (VIPCustomer)lsy; 
 		
 		
+		//lsy77777
+		
+		
 		
 	}
 }
