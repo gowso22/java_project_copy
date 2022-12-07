@@ -7,9 +7,10 @@ public class VIPCustomer extends Customer{
 	
 	public VIPCustomer()
 	{
-		//부모클래스의 생성자가 먼저 호출이 됩니다. 사실
+		//부모클래스의 생성자가 먼저 호출!!!이 됩니다. 사실
 		// super() 예약어 생략이 되어 있음.
 		super();
+		
 		customerGrade = "VIP";
 		bonusRatio = 0.05;
 		saleRatio = 0.1;
@@ -27,7 +28,7 @@ public class VIPCustomer extends Customer{
 	
 	
 	public int calcPrice(int price){
-		System.out.println("vip clac 메서드입니다.");
+		System.out.println("vip calc 메서드입니다.");
 		bonusPoint += price * bonusRatio;
 		return price - (int)(price * saleRatio);
 	}

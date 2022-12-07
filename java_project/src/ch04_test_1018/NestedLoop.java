@@ -11,6 +11,8 @@ public class NestedLoop {
 				System.out.println(dan + "X" + times + "=" + dan * times);
 			}
 			System.out.println("==================");
+			
+			
 		}
 	}
 }

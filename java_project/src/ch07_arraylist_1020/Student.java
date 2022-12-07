@@ -12,12 +12,14 @@ public class Student {
 	// 들어 갈수 있다. 이 ArrayList 의 원소 타입.
 	// Subject 타입의 참조형 변수(인스턴스)
 	ArrayList<Subject> subjectList;
+	ArrayList<LunchMenu> lunchList;
 		
 	public Student(int studentID, String studentName){
 		this.studentID = studentID;
 		this.studentName = studentName;
 		
 		subjectList = new ArrayList<Subject>();
+		lunchList = new ArrayList<LunchMenu>();
 	}
 	
 	public void addSubject(String name, int score){
@@ -27,6 +29,23 @@ public class Student {
 		subject.setScorePoint(score);
 		subjectList.add(subject);
 	}
+	
+	public void addLunchMenu(String lname) {
+		LunchMenu lunchMenu = new LunchMenu();
+		
+		lunchMenu.setlName(lname);
+		
+		lunchList.add(lunchMenu);
+	}
+	
+	public void showLunchList() {
+		for(LunchMenu lunch : lunchList) {
+			
+			System.out.println("학생 " + studentName +"의" +" 점심메뉴는 " + lunch.getlName() + "입니다.");
+			
+		}
+	}
+	
 	
 	public void showStudentInfo()
 	{

@@ -11,8 +11,7 @@ public class Student {
 	public Student(int stuNo, String stuName) {};
 	public Student(int stuNo, String stuName,String stuClass) {};
 	
-	
-	
+
 	public Student(int stuNo, String stuName, String stuClass, String stuHome) {
 		super();
 		this.stuNo = stuNo;
@@ -47,6 +46,10 @@ public class Student {
 	public void studySub(String stuName) {
 		System.out.println(stuName + "이 자바 공부중.");
 	}
+	
+	
+	// 메인
+	
 	
 	public static void main(String [] args) {
 		// 여러분은 직접 본인들의 아이디의 이니셜로 해당 참조형 변수 ( 인스턴스) 만들기. 
@@ -100,13 +103,6 @@ public class Student {
 		System.out.println(lsy4.stuClass);
 		System.out.println("해당 학생증 주소 직접 접근해서 출력");
 		System.out.println(lsy4.stuHome);
-		
-		
-		
-		
-		
-		
-		
 		
 		
 		

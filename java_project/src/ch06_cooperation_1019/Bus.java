@@ -1,7 +1,7 @@
 package ch06_cooperation_1019;
 
 public class Bus {
-	   int busNumber;             // 버스 번호
+	     int busNumber;             // 버스 번호
 		 int passengerCount;        // 승객 수
 		 int money;                 // 버스의 수입
 		    
