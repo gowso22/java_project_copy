@@ -1,15 +1,19 @@
 package ch09_gamelevel_1021;
 
-public class SuperLevel extends PlayerLevel{
+public class UltraLevel extends PlayerLevel{
+
+	
+	
+	
 	@Override
 	public void run() {
-		System.out.println("엄청 빨리 달립니다.");
+		System.out.println("엄청 매우 빨리 달립니다.");
 		
 	}
 
 	@Override
 	public void jump() {
-		System.out.println("아주 높이 jump 합니다.");
+		System.out.println("아주 더 높이 jump 합니다.");
 	}
 
 	@Override
@@ -18,14 +22,16 @@ public class SuperLevel extends PlayerLevel{
 	}
 	@Override
 	public void attack() {
-		System.out.println("attack 할 줄 모름.");
+		System.out.println("attack 함.");
 	}
+	
 	
 	@Override
 	public void showLevelMessage() {
-		System.out.println("***** 고급자 레벨 입니다. *****");
+		System.out.println("***** Ultra 레벨 입니다. *****");
 	}
-
+	
+	
 	
 
 }

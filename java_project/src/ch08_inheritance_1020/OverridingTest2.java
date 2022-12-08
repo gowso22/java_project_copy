@@ -6,6 +6,6 @@ public class OverridingTest2 {
 		Customer vc = new VIPCustomer(10030, "나몰라", 2000);
 		vc.bonusPoint = 1000;
 		
-		System.out.println(vc.getCustomerName() +" 님이 지불해야 하는 금액은 " + vc.calcPrice(10000) + "원입니다.");
+		System.out.println(vc.getCustomerName() +" 님이 지불해야 하는 금액은 " + vc.calcPrice(8000) + "원입니다.");
 	}
 }

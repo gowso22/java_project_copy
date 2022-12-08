@@ -4,7 +4,7 @@ public class MainBoard {
 
 	public static void main(String[] args) {
 
-		String str = new String();
+		String str = new String(); //?
 		// 추상클래스 및 다형성 흐름을 간단히 요약. 
 		// Player 는 이 클래스 안에 , 추상클래스(부모클래스) PlayerLevel 를 참조형 변수 level 선언. 
 		// has A 관계로 사용합니다. 
@@ -26,6 +26,12 @@ public class MainBoard {
 		// 다형성 예졔 ) .. 부모클래스형(타입) level ;
 		// 	level= new BeginnerLevel(); 사용 했습니다. 
 		
+		// 추가 하기 ultralevel (superlevel 다음 단계) 만들기
+		// 추상 클래스인 playerlevel의 상속을 받고
+		// 구현 내용은 각자 알아서 좋게 작성
+		// 레벨 4라고 임의로 지정. player 클래스에 있는 매서드 구현
+		
+		
 		
 		Player player = new Player();
 		player.play(1);
@@ -35,6 +41,13 @@ public class MainBoard {
 		SuperLevel sLevel = new SuperLevel();
 		player.upgradeLevel(sLevel);
 		player.play(3);
+		UltraLevel uLevel = new UltraLevel();
+	
+		player.upgradeLevel(uLevel);
+		player.play(2);
+		UltimateSkill ultimateSkill = new UltimateSkill("ultra", 5, "전역");
+		player.useUltimate(ultimateSkill);
+	
 		
 	}
 }

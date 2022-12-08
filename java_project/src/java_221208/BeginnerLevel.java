@@ -1,4 +1,4 @@
-package ch09_gamelevel_1021;
+package java_221208;
 
 public class BeginnerLevel extends PlayerLevel{
 
@@ -23,11 +23,6 @@ public class BeginnerLevel extends PlayerLevel{
 		System.out.println("***** 초보자 레벨 입니다. *****");
 	}
 
-	@Override
-	public void attack() {
-		
-		System.out.println("Attack 할 줄 모름");
-		
-	}
+	
 
 }

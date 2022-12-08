@@ -8,11 +8,15 @@ public class Customer {
 	int bonusPoint;
 	double bonusRatio;
 	
+	private void initCustomer()
+	{
+		customerGrade = "SILVER";
+		bonusRatio = 0.01;	
+	}
 	public Customer()
 	{
 		initCustomer();
 	}
-
 	public Customer(int customerID, String customerName){
 		this.customerID = customerID;
 		this.customerName = customerName;
@@ -20,11 +24,7 @@ public class Customer {
 		initCustomer();
 	}
 	
-	private void initCustomer()
-	{
-		customerGrade = "SILVER";
-		bonusRatio = 0.01;	
-	}
+
 	
 	public int calcPrice(int price){
 		bonusPoint += price * bonusRatio;
@@ -34,6 +34,11 @@ public class Customer {
 	public String showCustomerInfo(){
 		return customerName + " 님의 등급은 " + customerGrade + "이며, 보너스 포인트는 " + bonusPoint + "입니다.";  
 	}
+	
+	
+	
+	
+	
 	
 	public int getCustomerID() {
 		return customerID;

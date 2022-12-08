@@ -1,4 +1,4 @@
-package ch09_gamelevel_1021;
+package java_221208;
 
 public class SuperLevel extends PlayerLevel{
 	@Override
@@ -15,10 +15,6 @@ public class SuperLevel extends PlayerLevel{
 	@Override
 	public void turn() {
 		System.out.println("한 바퀴 돕니다.");		
-	}
-	@Override
-	public void attack() {
-		System.out.println("attack 할 줄 모름.");
 	}
 	
 	@Override

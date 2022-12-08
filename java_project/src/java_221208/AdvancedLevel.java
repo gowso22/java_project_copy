@@ -1,4 +1,4 @@
-package ch09_gamelevel_1021;
+package java_221208;
 
 public class AdvancedLevel extends PlayerLevel{
 	@Override
@@ -17,11 +17,7 @@ public class AdvancedLevel extends PlayerLevel{
 		System.out.println("Turn 할 줄 모르지롱.");		
 	}
 	
-	@Override
-	public void attack() {
-		System.out.println("Attack 할 줄 모름");
-		
-	}
+	
 
 	@Override
 	public void showLevelMessage() {
