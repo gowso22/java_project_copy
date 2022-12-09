@@ -3,6 +3,7 @@ package ch11_string_1021;
 public class StringTest2 {
 
 	public static void main(String[] args) {
+	
 
 		String javaStr = new String("java");
 		String androidStr = new String("android");
