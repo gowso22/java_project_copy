@@ -2,6 +2,8 @@ package ch12_collection_1024.arraylist;
 
 import java.util.ArrayList;
 
+import pattern7_Facade_Ex1.hometheater.PopcornPopper;
+
 class MyStack{
 	
 	private ArrayList<String> arrayStack = new ArrayList<String>();
@@ -13,7 +15,7 @@ class MyStack{
 	public String pop() {
 		int len = arrayStack.size();
 		if(len == 0 ) { 
-			System.out.println("������ ������ϴ�");
+			System.out.println("스택이 비었습니다");
 			return null;
 		}
 		
@@ -35,3 +37,4 @@ public class StackTest {
 		System.out.println(stack.pop());
 	}
 }
+

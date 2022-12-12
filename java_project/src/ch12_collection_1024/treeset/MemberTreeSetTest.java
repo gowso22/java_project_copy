@@ -9,9 +9,9 @@ public class MemberTreeSetTest {
 		MemberTreeSet memberTreeSet = new MemberTreeSet();
 		
 		
-		Member memberPark = new Member(1003, "�ڼ���");
-		Member memberLee = new Member(1001, "������");
-		Member memberSon = new Member(1002, "�չα�");
+		Member memberPark = new Member(1003, "ㅂㅅㅎ");
+		Member memberLee = new Member(1001, "ㅇㅈㅇ");
+		Member memberSon = new Member(1002, "ㅅㅁㄱ");
 		
 		
 		memberTreeSet.addMember(memberLee);
@@ -19,7 +19,7 @@ public class MemberTreeSetTest {
 		memberTreeSet.addMember(memberPark);
 		memberTreeSet.showAllMember();
 		
-		Member memberHong = new Member(1003, "ȫ�浿");  //1003 ���̵� �ߺ� 
+		Member memberHong = new Member(1003, "ㅎㄱㅇ");  //1003 id중복
 		memberTreeSet.addMember(memberHong);
 		memberTreeSet.showAllMember();
 	}

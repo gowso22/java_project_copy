@@ -28,6 +28,9 @@ public class MemberArrayList {
 			}
 		}
 		
+		
+		// Iterator 인터페이스에 해당, 반복 실행을 위해서 사용 합니다.
+		// 컬렉션에 있는 데이터를 Iterator에 담아서 반복 작업을 합니다.
 		Iterator<Member> ir = arrayList.iterator();
 		while(ir.hasNext()) {
 			Member member = ir.next();

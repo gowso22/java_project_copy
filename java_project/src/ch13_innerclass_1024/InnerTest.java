@@ -3,17 +3,18 @@ package ch13_innerclass_1024;
 class OutClass {
 
 	private int num = 10;
-	private static int sNum = 20;
+	private static int sNum = 20; //static 정적, static과 인스턴스는 물과 기름같다~
 	private InClass inClass;
 	
 	public OutClass(){
 		inClass = new InClass(); // 내부 클래스 생성
 	}
 	
+	// static x, 인스턴스 내부 클래스
 	class InClass{
 		
 		int inNum = 100;
-		//static int sInNum = 200;  //에러 남
+		//static int sInNum = 200;  //에러 남, 인스턴스 내부 클래스는 객체 생성하여 접근해야 함
 		
 		void inTest(){
 			System.out.println("OutClass num = " +num + "(외부 클래스의 인스턴스 변수)");
